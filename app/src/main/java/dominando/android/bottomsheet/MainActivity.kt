@@ -37,5 +37,10 @@ class MainActivity : AppCompatActivity() {
                 override fun onStateChanged(view: View, newState: Int) {}
             })
         }
+
+        binding.btnBottomSheetDialog.setOnClickListener {
+            BottomDialog().show(supportFragmentManager, "tag")
+        }
+
     }
 }
